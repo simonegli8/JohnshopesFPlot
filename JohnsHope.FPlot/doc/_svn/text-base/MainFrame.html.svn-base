@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>The Main Window</title>
+		<meta name="keywords" content="Main window" />
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+	<body>
+		<h1>The Main Window</h1>
+		<img src="img/MainFrame.png" align="left" hspace="20" vspace="10" />
+
+		<h3>The Menubar</h3>
+		<p><a href="MainMenu.html">Click here to display help about the menubar.</a></p>
+		
+		<h3>The Toolbar</h3>
+		
+		<p>
+			The <img alt="New Project" src="img/Icons.MenuFileNewIcon.png" style="vertical-align:middle" /> button purges all current items and creates a new project.<br />
+			The <img alt="New Project" src="img/Icons.MenuFileOpenIcon.png" style="vertical-align:middle" /> button opens an existing *.fplot file.<br />
+			The <img alt="New Project" src="img/Icons.MenuFileSaveIcon.png" style="vertical-align:middle" /> button saves the current project.<br />
+			The <img alt="New Project" src="img/Icons.MenuFileSaveAsIcon.png" style="vertical-align:middle" /> button saves the current project to a file you can specify.<br />
+			The <img alt="New Project" src="img/Icons.MenuFileCloseIcon.png" style="vertical-align:middle" /> button discards the current project.</p>
+		
+		<p>	
+			The <img alt="New Project" src="img/Icons.MenuEditCutIcon.png" style="vertical-align:middle" /> button cuts the current selection.<br />
+			The <img alt="New Project" src="img/Icons.MenuEditCopyIcon.png" style="vertical-align:middle" /> button copies the current selection.<br />
+			The <img alt="New Project" src="img/Icons.MenuEditPasteIcon.png" style="vertical-align:middle" /> button pastes the copied selection.</p>
+		
+		<p>
+			The <img alt="New Project" src="img/Icons.NewCurve.png" style="vertical-align:middle" /> button creates a new function item.<br />
+			The <img alt="New Project" src="img/Icons.NewData.png" style="vertical-align:middle" /> button cretaes a new data item.<br />
+			The <img alt="New Project" src="img/Icons.NewLibrary.png" style="vertical-align:middle" /> button creates a new C# library item.</p>
+			
+		<p>
+			The <img alt="New Project" src="img/Icons.MenuHelpHelpTopicsIcon.png" style="vertical-align:middle" /> button shows this text.<br />
+			The <img alt="New Project" src="img/Icons.JohnsHope.png" style="vertical-align:middle" /> button shows the
+				<a href="AboutForm.html">About Window</a>.</p>
+				
+		<p>
+			The <img alt="New Project" src="img/Glass.png" style="vertical-align:middle" /> button edits the selected item.<br />
+			The <img alt="New Project" src="img/Par.png" style="vertical-align:middle" /> button edits the function parameters of the selected function.<br />
+			The <img alt="New Project" src="img/Icons.LineStyle.png" style="vertical-align:middle" /> or
+			<img alt="New Project" src="img/Icons.GradientToolIcon.png" style="vertical-align:middle" /> button edits the style of the selected item.</p>
+		
+		<p>
+			The <img alt="New Project" src="img/Icons.NewPlot.png" style="vertical-align:middle" /> button creates a new plot.<br />
+			The <img alt="New Project" src="img/Icons.UpdatePlot.png" style="vertical-align:middle" /> button shows the currently selected items in the topmost
+			plot window.</p>
+			
+		<p>
+			The <img alt="New Project" src="img/Icons.Fit.png" style="vertical-align:middle" /> button opens a fit window.<br />
+			The <img alt="New Project" src="img/Icons.Eval.png" style="vertical-align:middle" /> button opens a function evaluation window.</p>
+				
+		<p>
+			The <img alt="New Project" src="img/Icons.cmd.png" style="vertical-align:middle" /> button opens a C# console window where you can execute
+				C# commands and view debug output.<br />
+			The <img alt="New Project" src="img/Icons.MenuLayersLayerPropertiesIcon.png" style="vertical-align:middle" /> button opens the compiler options window.</p>
+			
+		<h3>The Items Grid</h3>
+		<p>
+			Below the toolbar of the main window you see a grid showing all items that you have
+			created thus far. If you click once on an item, you can select it. You can 
+			select multiple items by pressing the control and shift keys while clicking on 
+			an item. If you click on the Name cell of a selected item you can edit it&#39;s 
+			name. If you double click on the Name cell of an item you can edit this item in 
+			a separate window. If you doubleclick on the style cell of an item you can edit 
+			it&#39;s style.</p>
+	</body>
+</html>

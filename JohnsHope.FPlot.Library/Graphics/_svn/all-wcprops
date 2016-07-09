@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/johnshopesfplot/!svn/ver/40/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics
+END
+PlotWebControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/johnshopesfplot/!svn/ver/45/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotWebControl.cs
+END
+Plot.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/johnshopesfplot/!svn/ver/45/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Plot.cs
+END
+PlotControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/johnshopesfplot/!svn/ver/45/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotControl.cs
+END
+Gradients.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/johnshopesfplot/!svn/ver/45/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Gradients.cs
+END
+PlotImage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotImage.cs
+END
+BitmapBuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/BitmapBuilder.cs
+END
+Graphics2D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Graphics2D.cs
+END
+Plots2D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/johnshopesfplot/!svn/ver/35/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Plots2D.cs
+END
+Graphics3D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Graphics3D.cs
+END
+Plots3D.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Plots3D.cs
+END
+PainterThread.cs
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/johnshopesfplot/!svn/ver/40/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PainterThread.cs
+END
+PlotPrintDocument.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/johnshopesfplot/!svn/ver/4/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotPrintDocument.cs
+END
+GraphicsBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/GraphicsBase.cs
+END
+LineStyleChooser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/johnshopesfplot/!svn/ver/45/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/LineStyleChooser.cs
+END
+PlotControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotControl.resx
+END
+PlotBehavior.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotBehavior.cs
+END
+PlotModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotModel.cs
+END
+GPL lisence.txt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/GPL%20lisence.txt
+END
+SpecialCursors.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/johnshopesfplot/!svn/ver/30/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/SpecialCursors.cs
+END
+Painter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Painter.cs
+END
+PlotPrintDocument.resx
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/PlotPrintDocument.resx
+END
+Scales.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/JohnsHope.FPlot.Library/Graphics/Scales.cs
+END

@@ -1,0 +1,68 @@
+<html>
+	<head>
+	  <meta name="keywords" content="Main Menu, File Menu, Edit Menu, Plot Menu, Calc Menu, Develop Menu, Help Menu" />
+		<title>Plot Menu</title>
+		<link rel="stylesheet" type="text/css" href="normal.css">
+	</head>
+	<body>
+
+		<h2><a name="filemenu">File menu:</a></h2>
+
+		<img src="img/PlotFileMenu.png" align="left" hspace="20" vspace="10" />
+
+		<h3>Save</h3>
+
+		<p>Saves the plot with the filename that is shown in the title bar</p>
+
+		<h3>Save As...</h3>
+
+		<p>Opens a dialogbox where you can choose a filename and saves the plot with that filename</p>
+
+		<h3>Save As Image</h3>
+
+		<p>Opens a dialogbox where you can choose a filename and saves the plot into an image file of this name and file-type.
+		Supported file types are bmp, gif, jpg, png, exif, tiff and emf (Metafile).</p>
+
+		<h3>Print Preview...</h3>
+
+		<p>Opens a dialogbox with a print preview.</p>
+
+
+		<h3>Page setup...</h3>
+
+		<p>Opens a dialogbox where you can configure the page setup used for printing.</p>
+
+		<br clear="all" />
+
+		<h3>Print...</h3>
+
+		<p>Opens the dialogbox for printing the plot to a printer.</p>
+
+		<h2><a name="optionsmenu">Options menu:</a></h2>
+
+		<img src="img/PlotOptionsMenu.png" align="left" hspace="20" vspace="10" />
+
+		<h3>Plot Range...</h3>
+
+		<p>Opens a <a href="ViewRangeForm.html">dialogbox</a> where you can set the plotting range.</p>
+
+		<h3>Options...</h3>
+
+		<p>Opens a <a href="OptionsForm.html">dialogbox</a> where you can set the appearance of the plot.</p>
+
+		<br clear="all" />
+
+		<h2><a name="helpmenu">Help menu:</a></h2>
+
+		<img src="img/PlotHelpMenu.png" align="left" hspace="20" vspace="10" />
+
+		<h3>Contents...</h3>
+
+		<p>Shows this help.</p>
+
+		<h3>About</h3>
+
+		<p>Shows the <a href="AboutForm.html">about dialogbox</a>. There you can register FPlot and can check the FPlot's version.</p>
+
+	</body>
+</html>

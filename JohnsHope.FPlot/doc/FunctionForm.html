@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<meta name="keywords" content="Edit function">
+		<title>Edit Functions</title>
+		<link rel="stylesheet" type="text/css" href="normal.css">
+	</head>
+
+	<body>
+		<h1>Edit Functions</h1>
+		<!-- TODO LineStyle and Gradient Forms -->
+		<img src="img/FunctionForm.png" align="left" hspace="20" vspace="10" />
+		<h3>Toolbar</h3>
+		<p>
+			Beginning at the top left in the toolbar, there are the three buttons <img src="img/ok.png" style="vertical-align:middle;" alt="Ok" />,
+			<img src="img/delete.gif" style="vertical-align:middle;" alt="Cancel" /> and <img src="img/Icons.MenuFileSaveIcon.png"style="vertical-align:middle;"alt="Apply" />.
+			The <img src="img/ok.png" style="vertical-align:middle;" alt="Ok" /> button compiles the source and closes the window.
+			The <img src="img/Icons.MenuFileSaveIcon.png"style="vertical-align:middle;" alt="Apply" /> button compiles the source and saves all changes but does not close the
+			window. The <img src="img/delete.gif" style="vertical-align:middle;" alt="Cancel" /> button closes the window without applying the changes
+			to the function item.<br />
+
+			Next, there is the <img src="img/Icons.Compile.png" style="vertical-align:middle;" alt="Compile" /> <b>Compile</b> button, with wich you can check the source text for
+			compilation errors and warnings. Compilation errors are shown at the bottom of the window.<br />
+
+			Then, there are the undo and redo buttons, <img src="img/Icons.MenuEditUndoIcon.png" style="vertical-align:middle;" alt="Undo" /> and
+			<img src="img/Icons.MenuEditRedoIcon.png" style="vertical-align:middle;" alt="Redo" />, with wich you can undo and redo changes in the text editor.<br />
+
+			With the buttons <img src="img/Icons.1D.png" style="vertical-align:middle;" alt="1D Funtion Type" />,
+			<img src="img/Icons.2D.png" style="vertical-align:middle;" alt="2D Function Type" /> and 
+			<img src="img/Icons.Color2D.png" style="vertical-align:middle;" alt="Color Function Type" />
+			you can set the function's type. You can choose between 1D function, 2D function and color function. A 1D function is a function of 
+			one variable whereas a 2D function is a function of 2 variables. A color function is a function of 2 variables that returns a color.<br />
+
+			With the button <img src="img/Icons.LineStyle.png" style="vertical-align:middle;" alt="Line Style"/> at the right top you can select the drawing style of the function.
+			If it is a 1D function you can select the
+			<a href="LineStyleForm.html">line style</a> for drawing, if it is a 2D function you can select a
+			<a href="GradientForm.html">color gradient</a> used to represent function values.
+			With the <img src="img/Par.png" style="vertical-align:middle;" alt="Function Parameters"/> button you can edit the <a href="#par">function's parameters</a>.<br />
+
+			In the textbox you can enter a name for the function. If a legend is displayed, this name appears in the legend.
+			The name also appears in the FPlot session grid, so you can change the functions properties.<br />
+
+			Finally, the <img src="img/Icons.MenuHelpHelpTopicsIcon.png" style="vertical-align:middle;" alt="Help"/> button shows this help text.<br />
+		</p>
+
+		<h3>Function's C# Code</h3>
+		<p>
+			<a name="par">Below the toolbar is some text that shows the headers of the C# source text of the function. This text varies according to the
+			function type. In addition to the bare function, there are two <code>double[]</code> arrays defined, <code>p</code> and <code>dfdp</code>.
+			The array <code>p</code> is an array of parameters your function can depend on. 
+			FPlot will detect how you use the array p in your function and will adjust the 
+			number of parameters of the function accordingly. If you only access <code>p[0]</code> in 
+			your function FPlot will know that this function has one parameter. The array <code>dfdp</code> is an array where you can assign
+			the derivatives df/dp to. You don't need to assign the derivatives to <code>dfdp</code>, it's just in order to evaluate the derivatives quicker and
+			more accurate. Some of the fit algorithms will speed up if you supply derivative information in your function. You can access and assign individual values of these two
+			arrays in the source code of the function. You don't need to bother about allocating the arrays and about the arrays length, the length of
+			the arrays is automatically adjusted as you access it's elements.</a><br />
+			You can edit the parameters <code>p</code> by pressing the <img src="img/Par.png" style="vertical-align:middle;" alt="Function Parameters"/> button. This will show a
+			<a href="ParForm.html">dialogbox</a> for editing the parameters.<br />
+			<a name="derivativeinfo">If you want to do <b>Levenberg-Marquardt</b> fitting with your function you might want to supply the derivative
+			information, e.g. the derivatives of df/dp.</a> If you omit the derivative information in your function, the Levenberg-Marquardt fit
+			algortihm will use numerically calcualted derivatives and will require more function evaluations. There is also another fit algorithm
+			called <b>Nelder & Mead</b> that requires no derivative information.<br />
+		</p>
+
+		<br clear="all" />
+
+		<h2>Predefined functions:</h2>
+
+		<p>For a list of predefined functions you can use in the source code look <a href="PredefinedFunctions.html">here</a>.</p>
+
+		<h2>Examples:</h2>
+
+		<p>Here is an example of a straight line with derivative information:</p>
+
+		<pre>
+		  dfdp[0] = 1; dfdp[1] = x;
+		  return p[0] + x*p[1];
+		</pre>
+
+		<p>Here is an example of 3 gauss curves with derivative information:</p>
+
+		<pre>
+		  // M - gauss curves with derivative information in dfdp.
+		  const int M = 3;
+		  double arg, ex, fac, sum = 0;
+		  for (int n = 0; n < 3*M; n += 3) {
+			arg = (x - p[n + 1])/p[n + 2];
+			ex = Math.Exp(-arg*arg);
+			fac = p[n]*ex*2*arg;
+			dfdp[n] = ex;
+			dfdp[n + 1] = fac/p[n + 2];
+			dfdp[n + 2] = fac*arg/p[n + 2];
+			sum += p[n]*ex;
+		  }
+		  return sum;
+		</pre>
+
+		<p>Here is an example for a two dimensional function that will draw the Mandelbrot set:</p>
+
+		<pre>
+		  double xn = 0, yn = 0, x2 = 0, y2 = 0;
+		  for (int n = 0; n < 500; n++) {
+			yn = 2*xn*yn + y;
+			xn = x2 - y2 + x;
+			x2 = xn*xn;
+			y2 = yn*yn;
+			if (x2 + y2 > 4) return n;
+		  }
+		  return 0;
+		</pre>
+
+	</body>
+</html>

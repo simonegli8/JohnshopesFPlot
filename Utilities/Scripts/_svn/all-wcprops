@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/johnshopesfplot/!svn/ver/35/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts
+END
+AssignVersion.bat
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/AssignVersion.bat
+END
+Make.FPlot.Library.Help.bat
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/johnshopesfplot/!svn/ver/20/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Make.FPlot.Library.Help.bat
+END
+Make.Setup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Make.Setup.bat
+END
+Make FPlot Library Help.lnk
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Make%20FPlot%20Library%20Help.lnk
+END
+Prepare Sandcastle.lnk
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Prepare%20Sandcastle.lnk
+END
+Prepare.Sandcastle.bat
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Prepare.Sandcastle.bat
+END
+Build.Sandcastle.bat
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Build.Sandcastle.bat
+END
+Upload.bat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/johnshopesfplot/!svn/ver/19/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Upload.bat
+END
+Backup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/johnshopesfplot/!svn/ver/17/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Backup.bat
+END
+Make.FPlot.Help.bat
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Make.FPlot.Help.bat
+END
+Backup FPlot.lnk
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Backup%20FPlot.lnk
+END
+Make FPlot Help.lnk
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Make%20FPlot%20Help.lnk
+END
+Upload Setup & Source to upload.sourceforge.net.lnk
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/johnshopesfplot/!svn/ver/1/Johns%20Hope's%20FPlot%202/trunk/Utilities/Scripts/Upload%20Setup%20&%20Source%20to%20upload.sourceforge.net.lnk
+END

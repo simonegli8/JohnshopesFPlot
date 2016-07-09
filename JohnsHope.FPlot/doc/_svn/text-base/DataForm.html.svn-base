@@ -1,0 +1,54 @@
+<!-- TODO datastyle & LoadForm.html -->
+<html>
+	<head>
+		<meta name="keywords" content="Edit measurement data, Edit data" />
+		<title>Edit measurement data</title>
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+
+	<body>
+		<h1>Edit measurement data</h1>
+		<img src="img/DataForm.png" align="left" hspace="20" vspace="10" alt="Data Window"/>
+
+		<h3>Toolbar</h3>
+		<p>	
+			Beginning at the top left in the toolbar, there are the three buttons <img src="img/ok.png" style="vertical-align:middle;" alt="Ok" />,
+			<img src="img/delete.gif" style="vertical-align:middle;" alt="Cancel" /> and <img src="img/Icons.MenuFileSaveIcon.png"style="vertical-align:middle;"alt="Apply" />.
+			The <img src="img/ok.png" style="vertical-align:middle;" alt="Ok" /> button 
+			applies all changes and closes the window.
+			The <img src="img/Icons.MenuFileSaveIcon.png"style="vertical-align:middle;" alt="Apply" /> 
+			button applies all changes but does not close the
+			window. The <img src="img/delete.gif" style="vertical-align:middle;" alt="Cancel" /> 
+			button closes the window without applying the changes to the data item. Note 
+			that changes you make to individual data points are applied immediately.
+		</p>
+		
+		<p>
+			With the <img src="img/Icons.LineStyle.png" style="vertical-align:middle;" alt="Line Style"/> button  at the right top you can select the drawing style of the
+			function.<br />
+			With the <img src="img/Icons.MenuFileOpenIcon.png" style="vertical-align:middle;" alt="Open File"/> button you open a <a href="LoadDataForm.html">
+			dialogbox</a> where you can open a file that contains data.</p>
+		<p>
+			In the textbox at the top you can enter a name for the data. This name will appear in 
+			the legend.</p>
+		<p>
+			Below the toolbar you can choose how many dimensions your data points will have, 
+			either 1, 2 or 3, and you can choose if your data points have error estimates.</p>
+		
+		<h3>Data Grid</h3>
+		
+		<p>Below you can edit the data in a table.</p>
+		
+		<p>
+			In the first data-row of the table (denoted with a "=" at the left) you can enter a formula for the
+			corresponding data-column. The formula must be an ordinary C# expression. You can refer to the varaibles <code>n</code>, <code>Length</code>,
+			<code>x[n]</code>, <code>y[n]</code>, <code>dx[n]</code> and <code>dy[n]</code> in this expression. 
+			<code>n</code> denotes the current row index and <code>Length</code> denotes the number of data points.
+		</p>
+		
+		<p>
+			Alternatively you can enter the columns data into the data fields of the table. If you enter some data in the last row, the table is extended by one row.
+		</p>
+
+	</body>
+</html>

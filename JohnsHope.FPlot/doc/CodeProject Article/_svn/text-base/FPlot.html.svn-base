@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0086)http://www.codeproject.com/script/Submit/ViewHTML.asp?guid=FPlot%2Fdotnet9%2F12%2F2005 -->
+<!-- HTML for article "FPlot, a .NET library for plotting functions and measurement data" by Simon Egli,Simon Egli,Simon Egli
+     URL: http://www.codeproject.com/cs/library/fplot.asp
+
+     Article content copyright Simon Egli,Simon Egli,Simon Egli
+     All formatting, additions and alterations Copyright © CodeProject, 1999-2007
+--><!----------------------------- Ignore -----------------------------><HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="ViewHTML-Dateien/global.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.6000.16546" name=GENERATOR></HEAD>
+<BODY>
+<P><B>Please choose 'View Source' in your browser to view the HTML, or File | 
+Save to save this file to your hard drive for editing.</B></P>
+<HR noShade SIZE=1>
+<!----------------------------- Ignore -----------------------------><!----------------------------- Article Starts ----------------------------->
+<P><IMG alt="Mandelbrot Plot" src="FPlot1.png"></P>
+<H2>Introduction</H2>
+<P>
+FPlot is a program and a library for plotting and fitting mathematical 
+functions and measurement data. The functions are entered as C# source code and compiled on the 
+fly. You can also edit and compile C# libraries your functions can refer to.
+It is also possible to differentiate and integrate numerically in your functions.
+You can of course also refer to external .NET libraries from your functions. This makes FPlot
+a very flexible and fast plotting and fitting tool.
+</p>
+<p>The FPlot application is shareware, and the library is freeware. The library
+implements most of the functionality that is found in the application. If you download FPlot from the
+<a href="http://www.johnshope.com/fplot">Homepage</a>,
+there are some sample VisualStudio projects, that show some of the capabilities of the library.
+The library implements a <CODE>System.Windows.Forms</CODE> control that 
+displays functions and data. Here is an image of some data fitted with three gauss curves:</P>
+<P><IMG alt="Gaussfit Plot" src="FPlot2.png"></P>
+<p>The library also implements a WebControl you can include in an ASP.NET Webpage to plot functions.
+You can view an example of such a Webpage at <a href="http://www.johnshope.com/fplot/demo">www.johnshope.com/fplot/demo</a>.
+
+<h3>Using the Library</h3>
+To use the library in your own programs is simple. First you must add the PlotControl and the PlotImage-WebControl your Toolbox in VisualStudio.
+Copy the JohnsHope.FPlot.Library.dll to a local folder in your Solution or to the Bin folder of your ASP.NET project.
+Then open the Toolbox and right click on it. Select <b>Choose Items...</b>
+and browse to the JohnsHope.FPlot.Library. Now you can add the Control and the WebControl in your visual designer.
+</p>
+<h3>Creating a WinForms appliciation with the FPlot library</h3>
+<p>
+Create a new WinForms Project. Now choose a Form and drag the PlotControl control onto the Form. Name the control "plot".
+Now in the contsructor of the Form enter the following code:
+</p>
+<pre lang=cs>  InitializeComponent();
+	
+  Function1DItem gauss = new Function1DItem(); // create a new 1D function
+
+  //The source below represents the body of the following function:
+  //double[] p;
+  //double f(double x) {
+  //  ...
+  //}
+  //The array p is an array of function parameters (that can be fitted for).
+
+  gauss.Source = @"
+    double arg = (x-p[0])/p[1];
+    return p[2]*exp(-arg*arg);
+  ";
+  gauss.Compile(); // compile the function
+  gauss.p[0] = 1; // the position of the curve's peak
+  gauss.p[1] = 1; // the width of the peak
+  gauss.p[2] = 4; // the height of the peak
+  plot.Model.Add(gauss);
+  plot.Model.SetRange(-1.8, 1.8, -0.2, 4.3); // sets the plot range.
+</pre>
+
+<h3>Creating a ASP.NET Website with the FPlot library</h3>
+<p>Create an ASP.NET page <b>mandelbrot.aspx</b> like the following:</p>
+<pre lang=html>&lt;%@ Page Language="C#" AutoEventWireup="true"  CodeFile="mandelbrot.aspx.cs"
+  Inherits="_mandelbrot"%>
+&lt;%@ Register TagPrefix="fplot" Assembly="JohnsHope.FPlot.Library"
+  Namespace="JohnsHope.FPlot.Library.Web" %>
+	
+&lt;html>
+&lt;head>
+  &lt;title>FPlot Web Demo&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;form id="form" runat="server">
+    &lt;h1>The Mandelbrot Set&lt;/h1>
+    &lt;fplot:PlotImage id="plot" runat="server" Height="354px" Width="493px"
+      TempPath="~/temp" EnableZooming="true" />
+    &lt;!-- Attributes:
+      Height/Width: Specify a size for the PlotImage. You must specify a size,
+        and you must not specify a percentage size.
+      TempPath: A path where temporary files are stored. The ASP.NET process must
+        have full access to the TempPath.
+      EnableZooming: If set to true, zooming in and out on the image is enabled.
+        This requires JavaScript.
+    -->
+    &lt;p>
+      You can zoom in or out by dragging over the images with the left mouse
+      button pressed. If you press the shift key during dragging, you will zoom out.
+    &lt;/p>
+  &lt;/form>
+&lt;/body>
+&lt;/html>
+</pre>
+<p>with the Code-Behind File <b>mandelbrot.aspx.cs</b>:</p>
+<pre lang=cs>using System;
+using JohnsHope.FPlot.Library;
+
+public partial class _mandelbrot : System.Web.UI.Page {
+
+  protected void Page_Load(object sender, EventArgs e) {
+    if (!Page.IsPostBack) {
+
+      Function2DItem mandelbrot = new Function2DItem(); // create a new 2D function
+
+      //The source below represents the body of the following function:
+      //double[] p;
+      //double f(double x, double y) {
+      //  ...
+      //}
+			
+      mandelbrot.Source = @"
+        double xn = 0, yn = 0, x2 = 0, y2 = 0;
+        for (int n = 0; n < p[0]; n++) {
+          yn = 2*xn*yn + y;
+          xn = x2 - y2 + x;
+          x2 = xn*xn; y2 = yn*yn;
+          if (x2 + y2 > 4) return n;
+        }
+        return -1;
+      ";
+      mandelbrot.Compile(); // compile the function
+      mandelbrot.p[0] = 500; // set the maximum of iterations value to 500
+      mandelbrot.Gradient = new RainbowGradient();
+        // sets the color gradient used to plot the function to a rainbow gradient.
+
+      plot.Model.SetRange(-2.3, 1.3, -1.3, 1.3, 0, 20); // sets the plot range.
+      plot.Model.FixXtoY = true; // set FixXtoY to true, so x- and y-scale will be proportional.
+      plot.Model.Add(mandelbrot);
+    }
+  }
+}
+</pre>
+
+<h3>Screenshots</h3>
+<img alt="JohnsHope's FPlot Screenshot" src="FPlot3.png" width="600px" height="450px"/>
+
+<!----------------------------- Article Ends -----------------------------></BODY></HTML>

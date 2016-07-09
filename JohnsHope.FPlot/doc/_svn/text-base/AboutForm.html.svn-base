@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta name="keywords" content="About Window" />
+		<title>About Window</title>
+		<link rel="stylesheet" type="text/css" href="normal.css">
+	</head>
+	<body>
+		<h1>About Window</h1>
+		<img src="img/about.png" align="left" hspace="20" vspace="10" />
+		<p>
+			This is the About Window of Johns Hope's FPlot. Here you can check the version of FPlot, donate money to
+			Johns Hope Software via PayPal, or you can contact Johns Hope Software if you want to participate in the further
+			development of Johns Hope's FPlot.</p>
+		<p>
+			You can also instruct FPlot to check for updates regularly if you have an 
+			internet connection.</p>
+	</body>
+</html>

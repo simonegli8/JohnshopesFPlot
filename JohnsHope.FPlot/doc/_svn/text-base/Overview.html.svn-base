@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta name="keywords" content="Welcome, Overview, File Menu, Edit Menu, Plot Menu, Calc Menu, Develop Menu, Help Menu" />
+		<title>Overview</title>
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+	<body background="img/MandelbrotBright.jpg">
+
+		<h1>Welcome to Johns Hope's FPlot</h1>
+
+		<p>
+			Johns Hope's FPlot is an OpenSource Windows programm for plotting and fitting 
+			of measurement data and mathematical functions.<br />
+			Why yet another function plotting programm? The great advantage of FPlot is 
+			flexibility and speed. Functions can be entered as C# sourcecode, which is 
+			similar to C, and are compiled on the fly with the C#-compiler included in .NET. 
+			This way you can express any function, no matter how complicated, and your 
+			function evaluates at the full speed of any compiled .NET programm, there is no 
+			slow expression interpreter in between. Also FPlot has built in support to 
+			numerically integrate and differentiate your functions. If you want to fit your 
+			model to measurement data, you don't have to mess around with many predefined 
+			models, simply express your fitting model with C# and you are ready to fit the 
+			model to your data. So FPlot is a simple but powerful app to do curve fitting. 
+			You can also easily refer to third party libraries like <a href="http://mathnet.opensourcedotnet.info/">
+			Math.NET</a> (OpenSource) or
+			<a href="http://www.dnanalytics.net">dnAnalytics</a> (freeware),
+			<a href="http://www.centerspace.net">NMath from CenterSpace Softare</a> 
+			(commercial) or
+			<a href="http://www.vni.com/products/imsl/cSharp/overview.html">IMSL from Visual 
+			Numerics</a> (commercial). As an alternative you can use functions from the book <a href="http://www.nr.com">
+			Numerical Recipes in C</a>.<br />
+			FPlot also comes with a free .NET library that implements the core functionality 
+			of FPlot and that you can use in your own .NET programms. The library also 
+			implements a WebControl you can use to plot functions and data on an ASP.NET 
+			webpage. If you need an interactive webpage that plots custom functions or data, 
+			feel free to <a href="http://www.johnshope.com/contact">contact us</a>.
+		</p>
+
+		<h2>Contents:</h2>
+
+		<h3><a name="MainMenuCommands">Main menu commands:</a></h3>
+
+		<p>
+			<a href="MainMenu.html#filemenu">File menu</a><br />
+			<a href="MainMenu.html#editmenu">Edit menu</a><br />
+			<a href="MainMenu.html#plotmenu">Plot menu</a><br />
+			<a href="MainMenu.html#calcmenu">Calc menu</a><br />
+			<a href="MainMenu.html#devmenu">Develop menu</a><br />
+			<a href="MainMenu.html#helpmenu">Help menu</a><br />
+		</p>
+
+		<h3><a name="PlotMenuCommands">Plot window menu commands:</a></h3>
+
+		<p>
+			<a href="PlotMenu.html#filemenu">File menu</a><br />
+			<a href="PlotMenu.html#optionsmenu">Options menu</a><br />
+			<a href="PlotMenu.html#helpmenu">Help menu</a><br />
+		</p>
+
+		<p><a href="MouseCommands.html">Plot window mouse commands</a></p>
+
+		<h3><a name="MainDialogs">Main window dialogs</a></h3>
+
+		<p>
+			<a href="FunctionForm.html">Edit a function</a><br />
+			<a href="DataForm.html">Edit data</a><br />
+			<a href="LibraryForm.html">Edit a library</a><br />
+			<a href="FitForm.html">Fit a function to measurement data</a><br />
+			<a href="EvalForm.html">Evaluate a function at a specific point</a><br />
+			<a href="ConsoleForm.html">Check debug output, and execute C# statements</a><br />
+			<a href="CompilerOptionsForm.html">Set compiler options</a><br />
+			<a href="AboutForm.html">About Johns Hope's FPlot</a>
+		</p>
+
+		<h3><a name="PlotDialogs">Plot window dialogs</a></h3>
+
+		<p>
+			<a href="ViewRangeForm.html">Plot range</a><br />
+			<a href="OptionsForm.html">Plot options</a><br />
+			<a href="AboutForm.html">About Johns Hope's FPlot</a>
+		</p>
+
+		<h3>Programming with C#</h3>
+		<p>
+			<a href="http://en.wikibooks.org/wiki/C_Sharp_Programming">The wikibook about C# programming</a>.<br />
+			<a href="http://oldwww.cs.aau.dk/~normark/oop-07/html/notes/theme-index.html">A C# tutorial</a><br />
+			<a href="http://oldwww.cs.aau.dk/~normark/oop-07/html/notes/intro-csharp_themes-csharp-c-sect.html">C# in relation to C</a><br />
+			<a href="PredefinedFunctions.html">Predefined functions in FPlot</a><br />
+			<a href="JohnsHope.FPlot.Library.chm">JohnsHope.FPlot.Library reference</a>
+		</p>
+		
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<meta name="keywords" content="Edit drawing options" />
+		<title>Predefined Functions</title>
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+	<body>
+		<h1>Predefined Functions</h1>
+		<p>In all source code (except in libraries) you can use the following predefined functions:</p>
+		<h2>Constants</h2>
+		<ul>
+			<li><code>e</code>: a shortcut for <code>Math.E</code>, i.e. the Euler's number</li>
+			<li><code>pi</code>: a shortcut for <code>Math.PI</code>, i.e. the pi constant</li>
+		</ul>
+		<h2>Ordinary functions</h2>
+		<ul>
+			<li><code>abs</code>: a shortcut for <code>Math.Abs</code>, i.e. the absolute value of a number</li>
+			<li><code>acos</code>: a shortcut for <code>Math.Acos</code>, i.e. the arccosine</li>
+			<li><code>asin</code>: a shortcut for <code>Math.Asin</code>, i.e. the arcsine</li>
+			<li><code>atan</code>: a shortcut for <code>Math.Atan</code>, i.e. the arctangent</li>
+			<li><code>ceiling</code>: a shortcut for <code>Math.Ceiling</code>, i.e. the ceiling of a number</li>
+			<li><code>cos</code>: a shortcut for <code>Math.Cos</code>, i.e. the cosine</li>
+			<li><code>cosh</code>: a shortcut for <code>Math.Cosh</code>, i.e. the hyperbolic cosine</li>
+			<li><code>exp</code>: a shortcut for <code>Math.Exp</code>, i.e. the exponential function</li>
+			<li><code>floor</code>: a shortcut for <code>Math.Floor</code>, i.e. the floor of a number</li>
+			<li><code>log</code>: a shortcut for <code>Math.Log</code>, i.e. the natural logarithm</li>
+			<li><code>ln</code>: a shortcut for <code>Math.Log</code>, i.e. the natural logarithm</li>
+			<li><code>log10</code>: a shortcut for <code>Math.Log10</code>, i.e. the logarithm to base 10</li>
+			<li><code>max</code>: a shortcut for <code>Math.Max</code>, i.e. the maximum of two numbers</li>
+			<li><code>min</code>: a shortcut for <code>Math.Min</code>, i.e. the minimum of two numbers</li>
+			<li><code>pow</code>: a shortcut for <code>Math.Pow</code>, i.e. the exponentiation of two numbers </li>
+			<li><code>sin</code>: a shortcut for <code>Math.Sin</code>, i.e. the sine</li>
+			<li><code>sinh</code>: a shortcut for <code>Math.Sinh</code>, i.e. the hyperbolic sine</li>
+			<li><code>sqrt</code>: a shortcut for <code>Math.Sqrt</code>, i.e. the square root</li>
+			<li><code>tan</code>: a shortcut for <code>Math.Tan</code>, i.e. the tangent</li>
+			<li><code>tanh</code>: a shortcut for <code>Math.Tanh</code>, i.e. the hyperbolic tangent</li>
+		</ul>
+		<h2>Differentiation and Integration</h2>
+		<h3>One dimensional functions:</h3>
+		<ul>
+			<li><code>Function1D(string name)</code>: returns a 1D function of the named item that can be passed to an integration 
+				or differentiation function.</li>
+			<li><code>diff(JohnsHope.Analysis.IFunction1D f, double x, out double abserr)</code>: returns the derivative of the function
+				<code>f</code> at point <code>x</code> with the absolute error <code>abserr</code>. To compute the derivative of a
+				named 1D function item you would write <code>diff(Function1D("name of the item"), x, out abserr);</code></li>
+			<li><code>dfdx</code> same as <code>diff</code>.</li>
+			<li><code>diffp(JohnsHope.Analysis.IParametricFunction1D f, double x, int n, out double abserr)</code>: returns the derivative
+				df/dp of the n-th parameter <code>f.p[n]</code>.</li>
+			<li><code>dfdp</code>: same as <code>diffp</code></li>
+			<li><code>intq(JohnsHope.Analysis.IFunction1D f, double a, double b, double epsabs, double epsrel, out double abserr)</code>:
+				computes the integral of the function <code>f</code> at equally spaced abscissas. The integral is computed until the estimated
+				absoulte error is below either <code>epsabs</code> or the estimated relative error is below <code>epsrel</code>.</li>
+			<li><code>intqa(JohnsHope.Analysis.IFunction1D f, double a, double b, double epsabs, double epsrel, int memlimit,
+				float smoothness, out double abserr)</code>: computes the integral of the function <code>f</code> with an adaptive stepsize,
+				accoring to the smoothness of the function. Similar to intq, the integral is computed untitl the estimated
+				absoulte error is below either <code>epsabs</code> or the estimated relative error is below <code>epsrel</code> or until the memory
+				consumption is above <code>memlimit</code>. The parameter <code>smoothness</code> is a float value between 0 and 1, where 1 stands for a
+				smooth function and 0 for a non-smooth funtion (You must append an F letter to this parameter, so the compiler will interpret the number
+				correctly as a float number).</li>												 
+		</ul>
+		<h3>Two dimensional functions</h3>
+		<ul>
+			<li><code>Function2D(string name)</code>: returns a 2D function of the named item that can be passed to an integration or
+				differentiation function.</li>
+			<li><code>diffx(JohnsHope.Analysis.IFunction2D f, double x, double y, out double abserr)</code>: returns the derivative df/dx of 
+				a two dimensional function <code>f</code>.</li>
+			<li><code>diffy(JohnsHope.Analysis.IFunction2D f, double x, double y, out double abserr)</code>: returns the derivative df/dy of
+				a two dimensional function <code>f</code>.</li>
+			<li><code>diffp(JohnsHope.Analysis.IParametricFunction2D f, double x, double y, int n, out double abserr)</code>: return the
+				derivative df/dp of a two dimensional parametric function and the n-th parameter <code>f.p[n]</code>.</li>
+			<li><code>dfdx</code>: same as <code>diffx</code>.</li>
+			<li><code>dfdy</code>: same as <code>diffy</code>.</li>
+			<li><code>dfdp</code>: same as <code>diffp</code>.</li>
+		</ul>
+		<h1>Imported namespaces</h1>
+		<p>&nbsp;You can set global <code>using</code> directives in the <a href="CompilerOptionsForm.html">compiler options</a>. The namespace <code>System.Diagnostics</code> is imported by default, so you can use the methods <code>Debug.Write</code> and
+			<code>Debug.WriteLine</code> in your code. You can watch the debug output in the <a href="ConsoleForm.html">console window</a>.
+		</p>
+	</body>
+</html>

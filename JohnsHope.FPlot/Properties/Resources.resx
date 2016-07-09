@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplySelection" xml:space="preserve">
+    <value>Apply Selection to </value>
+  </data>
+  <data name="FileExtension" xml:space="preserve">
+    <value>.fplot</value>
+  </data>
+  <data name="FileOpenFail" xml:space="preserve">
+    <value>Could not open file #file.</value>
+  </data>
+  <data name="FPlotExpired" xml:space="preserve">
+    <value>The evaluation period for JohnsHope's FPlot has expired. Please register the software.</value>
+  </data>
+  <data name="FPlotURL" xml:space="preserve">
+    <value>http://www.johnshope.com/fplot</value>
+  </data>
+  <data name="GradientPath" xml:space="preserve">
+    <value>..\gradients</value>
+  </data>
+  <data name="HelpFile" xml:space="preserve">
+    <value>..\help\Johns Hope's FPlot.chm</value>
+  </data>
+  <data name="IsRegistered" xml:space="preserve">
+    <value>This is a registered version.</value>
+  </data>
+  <data name="NewWarning" xml:space="preserve">
+    <value>Warning: All current Items and Plots will be deleted if you proceed.</value>
+  </data>
+  <data name="Noname" xml:space="preserve">
+    <value>Noname</value>
+  </data>
+  <data name="NotRegistered" xml:space="preserve">
+    <value>This is an unregistered version.
+You have #days days left to register.</value>
+  </data>
+  <data name="PlotFrameTitle" xml:space="preserve">
+    <value>Plot</value>
+  </data>
+  <data name="RegFail" xml:space="preserve">
+    <value>Sorry, your registration code is invalid.</value>
+  </data>
+  <data name="RegSuccess" xml:space="preserve">
+    <value>JohnsHope's FPlot has been registered successfully.</value>
+  </data>
+  <data name="RegURL" xml:space="preserve">
+    <value>http://www.johnshope.com/fplot/registration</value>
+  </data>
+  <data name="SelectGradient" xml:space="preserve">
+    <value>Select Gradient...</value>
+  </data>
+  <data name="SelectStyle" xml:space="preserve">
+    <value>Select Style...</value>
+  </data>
+  <data name="WarningCaption" xml:space="preserve">
+    <value>Warning!</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="JohnsHopeLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\JohnsHopeLogo1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NRCopyright" xml:space="preserve">
+    <value>The routines, gammln, gser, gcf, gammq, mrqmin, mrqcof, gaussj, covsrt, amebsa, amotsa and ran0
+are based on the routine(s) gammln, gser, gcf, gammq, mrqmin, mrqcof, gaussj, covsrt, amebsa,
+amotsa and ran0 from the book Numerical Recipes in C (Cambridge University Press),
+Copyright (C) 1987-1992 by Numerical Recipes Software.  Used by permission.  Use of this routine
+other than as an integral part of JohnsHope's FPlot requires an additional license from Numerical
+Recipes Software. Further distribution in any form is prohibited.</value>
+  </data>
+  <data name="MainTitle" xml:space="preserve">
+    <value>Johns Hope's FPlot - </value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Function" xml:space="preserve">
+    <value>Function</value>
+  </data>
+  <data name="LoadData" xml:space="preserve">
+    <value>Load Data for</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DeleteQ" xml:space="preserve">
+    <value>Do you want to delete this item?</value>
+  </data>
+  <data name="DeleteQTitle" xml:space="preserve">
+    <value>Delete item?</value>
+  </data>
+  <data name="DeleteSel" xml:space="preserve">
+    <value>Do you want to delete the selected items?</value>
+  </data>
+  <data name="DeleteSelTitle" xml:space="preserve">
+    <value>Delete selection?</value>
+  </data>
+  <data name="ImageFormatNotSupported" xml:space="preserve">
+    <value>This image format is not supported</value>
+  </data>
+  <data name="Mandelbrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Mandelbrot.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="ExceptionIntro" xml:space="preserve">
+    <value>The following exception occured:</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>File not found:</value>
+  </data>
+  <data name="GIMPError" xml:space="preserve">
+    <value>The GIMP gradient file $f has an invalid format.</value>
+  </data>
+  <data name="DonateURL" xml:space="preserve">
+    <value>http://www.johnshope.com/donate</value>
+  </data>
+  <data name="PayPalDonate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\PayPalDonate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactURL" xml:space="preserve">
+    <value>http://www.johnshope.com/contact</value>
+  </data>
+  <data name="errorimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\error.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warningimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\warning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FitError" xml:space="preserve">
+    <value>Error during Fit:</value>
+  </data>
+  <data name="MarquardtError" xml:space="preserve">
+    <value>Error during Marquardt-Fit:</value>
+  </data>
+  <data name="NelderMeadError" xml:space="preserve">
+    <value>Error during Nelder Mead Fit:</value>
+  </data>
+  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\redo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\undo.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\delete.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Glass.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lupedisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\GlassDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="par" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Par.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pardisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ParDisabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\UpDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Do you really want to close all items? All unsaved changes will be lost.</value>
+  </data>
+  <data name="CloseTitle" xml:space="preserve">
+    <value>Close all items?</value>
+  </data>
+  <data name="CloseWarning" xml:space="preserve">
+    <value>Warning: All current Items and Plots will be deleted if you proceed.</value>
+  </data>
+  <data name="LibraryHelpFile" xml:space="preserve">
+    <value>..\help\JohnsHope.FPlot.Library.chm</value>
+  </data>
+  <data name="PackageToolTip" xml:space="preserve">
+    <value>If set, the dll file is packaged into the *.fplot file when the plot is saved.</value>
+  </data>
+  <data name="SmallZip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\SmallZip.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\cancel_black.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CopyOf" xml:space="preserve">
+    <value>Copy of </value>
+  </data>
+  <data name="CurvesEffect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\CurvesEffect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="DeleteItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Help.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_ColorPickerToolIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.ColorPickerToolIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.curve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_ImageFromDiskIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.ImageFromDiskIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_InkSketchEffectIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.InkSketchEffectIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditCopyIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditCopyIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditCutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditCutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditEraseSelectionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditEraseSelectionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditPasteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditPasteIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditRedoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditRedoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuEditUndoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuEditUndoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileAcquireFromClipboardIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileAcquireFromClipboardIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileCloseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileCloseIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileNewIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileNewIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileOpenIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileOpenIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFilePrintIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFilePrintIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileSaveAsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileSaveAsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuFileSaveIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuFileSaveIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpCheckForUpdatesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpCheckForUpdatesIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpDonateIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpDonateIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpHelpTopicsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpHelpTopicsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpLanguageIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpLanguageIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpSendFeedbackIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpSendFeedbackIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuHelpTutorialsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuHelpTutorialsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuLayersLayerPropertiesIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuLayersLayerPropertiesIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuViewActualSizeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuViewActualSizeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuViewGridIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuViewGridIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuViewZoomInIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuViewZoomInIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuViewZoomOutIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuViewZoomOutIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuWindowColorsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuWindowColorsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuWindowHistoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.MenuWindowHistoryIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_PanToolIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.PanToolIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_ToolConfigStrip_FloodMode_Global" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.ToolConfigStrip.FloodMode.Global.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_ZoomToolIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Icons.ZoomToolIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Images_ImageStrip_CloseButton_Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Images.ImageStrip.CloseButton.Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Images_ImageStrip_CloseButton_Hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Images.ImageStrip.CloseButton.Hot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Images_ImageStrip_CloseButton_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Images.ImageStrip.CloseButton.Normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Images_ImageStrip_CloseButton_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Images.ImageStrip.CloseButton.Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Images_PayPalDonate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Images.PayPalDonate.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="Icons_cmd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.cmd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_1D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.1d.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.2d.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Color2D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.color2d.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Eval" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.eval.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Fit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.fit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_GradientToolIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.gradienttoolicon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_JohnsHope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.johnshope.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_LinearClampedGradientIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.linearclampedgradienticon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_LineStyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.linestyle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_NewCurve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.newcurve.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_NewData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.newdata.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_NewLibrary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.newlibrary.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_NewPlot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.newplot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Run" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.run.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.trash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_UpdatePlot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.updateplot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LineStyle" xml:space="preserve">
+    <value>Line Style</value>
+  </data>
+  <data name="ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ok.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Style" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="downloadButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\downloadbutton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Compile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.compile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VersionUrl" xml:space="preserve">
+    <value>http://www.johnshope.com/fplot/version.aspx</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="Icons_Chisquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.chisquare.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.data.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.function.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_MenuViewRulersIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.menuviewrulersicon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Moderate_Progress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.moderate.progress.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_NOfF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.noff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_PlusMinus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.plusminus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Progress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.progress.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.q.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icons_Slow_Progress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons.slow.progress.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Command" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.command.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Data" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.data.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Fit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.fit.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.function.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Library" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.library.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.pause.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Plot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icon.plot.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot.blue.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Brown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot brown.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot green.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Olive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot.olive.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot.orange.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot.red.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mandelbrot_Violett" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrot.violett.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MandelbrotBright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\mandelbrotbright.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

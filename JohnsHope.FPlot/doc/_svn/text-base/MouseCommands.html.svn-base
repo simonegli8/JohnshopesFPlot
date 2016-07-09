@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta name="keywords" content="Mouse commands">
+		<title>Mouse Commands in the Plot Window</title>
+		<link rel="stylesheet" type="text/css" href="normal.css">
+	</head>
+	<body>
+		<h1>Mouse Commands in the Plot Window</h1>
+		<p>You can zoom and move the plotting area with the following mouse commands:</p>
+		<h3>Mouse wheel:</h3>
+		<p>You can zoom in by moving the mouse wheel towards you and zoom out by moving the mouse wheel away from you.</p>
+		<h3>Dragging the mouse with the left mouse button pressed:</h3>
+		<p>A drag-rectangle is displayed. When you release the mouse button, the plotting area is zoomed in to the drag-rectangle. If you additionally press the control or shift key,
+			the plot is zoomed out.</p>
+		<h3>Dragging the mouse with the right mouse button pressed:</h3>
+		<p>The plotting area is moved with the mouse.</p>
+	</body>
+</html>

@@ -1,0 +1,320 @@
+using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Reflection;
+using JohnsHope.FPlot.Properties;
+using JohnsHope.FPlot.Util;
+using JohnsHope.Update;
+
+namespace JohnsHope.FPlot
+{
+	/// <summary>
+	/// Summary description for AboutForm.
+	/// </summary>
+	public class AboutForm : System.Windows.Forms.Form
+	{
+		private System.Windows.Forms.Label AppName;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Button button1;
+		//private RegisterForm regForm = new RegisterForm();
+		private LinkLabel linkLabel1;
+		private PictureBox pictureBox1;
+		private Label label4;
+		private Label label3;
+		private PictureBox pictureBox3;
+		private Label label5;
+		private LinkLabel linkLabel2;
+		private CheckBox autoUpdate;
+		private Button button2;
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.Container components = null;
+
+		public AboutForm()
+		{
+			//
+			// Required for Windows Form Designer support
+			//
+			InitializeComponent();
+	
+			AppName.Text = "JohnsHope's FPlot " + Updater.InstalledVersion.DisplayVersion;
+			autoUpdate.Checked  = Updater.InstalledVersion.AutoUpdate;
+		}
+
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		protected override void Dispose( bool disposing )
+		{
+			if( disposing )
+			{
+				if(components != null)
+				{
+					components.Dispose();
+				}
+			}
+			base.Dispose( disposing );
+		}
+
+		#region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
+			this.AppName = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+			this.autoUpdate = new System.Windows.Forms.CheckBox();
+			this.button2 = new System.Windows.Forms.Button();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// AppName
+			// 
+			this.AppName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.AppName.BackColor = System.Drawing.Color.Transparent;
+			this.AppName.Font = new System.Drawing.Font("Verdana", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.AppName.Location = new System.Drawing.Point(10, 100);
+			this.AppName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.AppName.Name = "AppName";
+			this.AppName.Size = new System.Drawing.Size(445, 46);
+			this.AppName.TabIndex = 0;
+			this.AppName.Text = "JohnsHope\'s FPlot";
+			this.AppName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label2
+			// 
+			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(10, 214);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(445, 36);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "Programmed with C# by Simon Egli. This programm is freeware and Open Source\r\n. Yo" +
+    "u can download it at:\r\n";
+			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// button1
+			// 
+			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.button1.Location = new System.Drawing.Point(77, 472);
+			this.button1.Margin = new System.Windows.Forms.Padding(2);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(120, 22);
+			this.button1.TabIndex = 2;
+			this.button1.Text = "Ok";
+			this.button1.Click += new System.EventHandler(this.okClick);
+			// 
+			// linkLabel1
+			// 
+			this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.linkLabel1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel1.Location = new System.Drawing.Point(11, 250);
+			this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.Size = new System.Drawing.Size(445, 15);
+			this.linkLabel1.TabIndex = 7;
+			this.linkLabel1.TabStop = true;
+			this.linkLabel1.Text = "www.johnshope.com/fplot";
+			this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkClick);
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.pictureBox1.Image = global::JohnsHope.FPlot.Properties.Resources.JohnsHopeLogo;
+			this.pictureBox1.InitialImage = null;
+			this.pictureBox1.Location = new System.Drawing.Point(10, 11);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(445, 87);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+			this.pictureBox1.TabIndex = 8;
+			this.pictureBox1.TabStop = false;
+			// 
+			// label4
+			// 
+			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.label4.BackColor = System.Drawing.Color.Transparent;
+			this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+			this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label4.Location = new System.Drawing.Point(8, 145);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(447, 54);
+			this.label4.TabIndex = 12;
+			this.label4.Text = "\"For God so loved the world that he gave his one and only Son, that whoever belie" +
+    "ves in him shall not perish but have eternal life.\"";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// label3
+			// 
+			this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.label3.BackColor = System.Drawing.Color.Transparent;
+			this.label3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(10, 278);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(357, 42);
+			this.label3.TabIndex = 13;
+			this.label3.Text = "Johns Hope\'s FPlot is freeware. However you can support further development by a " +
+    "donation to Johns Hope Software.";
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pictureBox3.Image = global::JohnsHope.FPlot.Properties.Resources.PayPalDonate;
+			this.pictureBox3.Location = new System.Drawing.Point(373, 282);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(71, 38);
+			this.pictureBox3.TabIndex = 15;
+			this.pictureBox3.TabStop = false;
+			this.pictureBox3.Click += new System.EventHandler(this.DonateClick);
+			// 
+			// label5
+			// 
+			this.label5.BackColor = System.Drawing.Color.Transparent;
+			this.label5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(9, 337);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(447, 34);
+			this.label5.TabIndex = 16;
+			this.label5.Text = "If you have discovered a bug or have a feature request or if you want to particip" +
+    "ate in the development of FPlot just contact us:";
+			// 
+			// linkLabel2
+			// 
+			this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+			this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.linkLabel2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkLabel2.Location = new System.Drawing.Point(10, 371);
+			this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.linkLabel2.Name = "linkLabel2";
+			this.linkLabel2.Size = new System.Drawing.Size(445, 15);
+			this.linkLabel2.TabIndex = 17;
+			this.linkLabel2.TabStop = true;
+			this.linkLabel2.Text = "www.johnshope.com/contact";
+			this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ContactClick);
+			// 
+			// autoUpdate
+			// 
+			this.autoUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.autoUpdate.AutoSize = true;
+			this.autoUpdate.BackColor = System.Drawing.Color.Transparent;
+			this.autoUpdate.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.autoUpdate.Location = new System.Drawing.Point(14, 422);
+			this.autoUpdate.Name = "autoUpdate";
+			this.autoUpdate.Size = new System.Drawing.Size(406, 32);
+			this.autoUpdate.TabIndex = 18;
+			this.autoUpdate.Text = "Always inform me when a new version of Johns Hope\'s FPlot\r\nis available";
+			this.autoUpdate.UseVisualStyleBackColor = false;
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(216, 472);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(171, 23);
+			this.button2.TabIndex = 19;
+			this.button2.Text = "Check for Update...";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.CheckUpdateClick);
+			// 
+			// AboutForm
+			// 
+			this.AcceptButton = this.button1;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(466, 507);
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.autoUpdate);
+			this.Controls.Add(this.linkLabel2);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.pictureBox3);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.linkLabel1);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.AppName);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Margin = new System.Windows.Forms.Padding(2);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "AboutForm";
+			this.ShowIcon = false;
+			this.ShowInTaskbar = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+			this.Text = "About JohnsHope\'s FPlot";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
+		}
+		#endregion
+
+	
+		private void okClick(object sender, System.EventArgs e) {
+			Updater.Enabled = autoUpdate.Checked;
+			Hide();
+		}
+
+		private void DonateClick(object sender, EventArgs e) {
+			System.Diagnostics.Process.Start(Resources.DonateURL);			
+		}
+
+		private void linkClick(object sender, LinkLabelLinkClickedEventArgs e) {
+			System.Diagnostics.Process.Start(Resources.FPlotURL);
+		}
+
+		private void ContactClick(object sender, LinkLabelLinkClickedEventArgs e) {
+			System.Diagnostics.Process.Start(Resources.ContactURL);
+		}
+
+		private void CheckUpdateClick(object sender, EventArgs e) {
+			Cursor = Cursors.WaitCursor;
+			//bool check = Updater.ForceCheck();
+			bool check = false;
+			Cursor = Cursors.Arrow;
+			if (check) {
+				var form = new UpdateForm();
+				form.Show();
+			} else {
+				MessageBox.Show("There is no new version available for Download.");
+			}
+		}
+
+	}
+}

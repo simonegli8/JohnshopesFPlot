@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta name="keywords" content="Debug, Console, Run statements" />
+		<title>Console Window</title>
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+	<body>
+		<h1>Console Window</h1>
+		<img src="img/ConsoleForm.png" align="left" hspace="20" vspace="10" />
+		<p>In this window you can watch the debug output log from your code. You can write to the debug output from your code by calling
+			<code>Debug.Write</code> and <code>Debug.WriteLine</code>. Below the debug output you can write C# statements and execute them by
+			pressing the 
+			<img alt="Run" src="img/Icons.Run.png" style="vertical-align: middle" /> button.
+		</p>
+		<h3>Toolbar</h3>
+		<p>
+			With the <img alt="Close" src="" style="vertical-align: middle" src="img/delete.gif" /> <b>Close</b> button you close the Console window.<br />
+				With the <img alt="Run" style="vertical-align: middle" src="img/Icons.Run.png" /> <b>Run</b> button you execute the C# command in the bottom textbox.<br />
+				With the <img alt="Clear" style="vertical-align: middle" src="img/Icons.Trash.png"/> <b>Clear</b> button you clear the top output textbox.<br />
+				With the <img alt="Help" style="vertical-align: middle" src="img/Icons.MenuHelpHelpTopicsIcon.png" /> <b>Help</b> button you show this text.<br />
+				With the <img alt="Help on Library" style="vertical-align: middle" src="img/Icons.MenuHelpTutorialsIcon.png"/> <b>Library help</b> button you display help about the JohnsHope.FPlot.Library
+				namespace.
+		</p>		
+	</body>
+</html>

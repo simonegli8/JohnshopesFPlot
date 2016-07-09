@@ -1,0 +1,9 @@
+-setup
+-i "..\JohnsHope.FPlot\img\Mandelbrot.ico"
+-le
+-auto
+-overwrite
+-runasadmin
+-wait msiexec
+-t "FPlot.se.dialog.txt"
+-c setup.exe

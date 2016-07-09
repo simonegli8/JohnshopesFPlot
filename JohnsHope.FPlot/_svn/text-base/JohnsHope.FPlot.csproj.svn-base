@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED7BA608-358E-4C1E-83DF-800AE0DDA1FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JohnsHope.FPlot</RootNamespace>
+    <AssemblyName>JohnsHope.FPlot</AssemblyName>
+    <StartupObject>JohnsHope.FPlot.Start</StartupObject>
+    <ApplicationIcon>Mandelbrot.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://johnshope.com/fplot/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\CompilerOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CovarianceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GradientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GradientForm.Designer.cs">
+      <DependentUpon>GradientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionLineStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionLineStyleForm.Designer.cs">
+      <DependentUpon>FunctionLineStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoadDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\MainModel.cs" />
+    <Compile Include="Forms\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlotForm.Designer.cs">
+      <DependentUpon>PlotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\Resetable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompilerOptionsForm.resx">
+      <DependentUpon>CompilerOptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CovarianceForm.resx">
+      <DependentUpon>CovarianceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConsoleForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConsoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorsForm.resx">
+      <DependentUpon>ErrorsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EvalForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EvalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExceptionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FitForm.resx">
+      <DependentUpon>FitForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionForm.resx">
+      <DependentUpon>FunctionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GradientForm.resx">
+      <DependentUpon>GradientForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageControl.resx">
+      <DependentUpon>ImageControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageForm.resx">
+      <DependentUpon>ImageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Controls\ImportsGridView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportsGridView.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Forms\LibraryForm.resx">
+      <DependentUpon>LibraryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionLineStyleForm.resx">
+      <DependentUpon>FunctionLineStyleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoadDataForm.resx">
+      <DependentUpon>LoadDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParForm.resx">
+      <DependentUpon>ParForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlotForm.resx">
+      <DependentUpon>PlotForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RangeForm.resx">
+      <DependentUpon>RangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="doc\AboutForm.html" />
+    <Content Include="doc\CodeProject Article\FPlot.html" />
+    <Content Include="doc\CompilerOptionsForm.html" />
+    <Content Include="doc\ConsoleForm.html" />
+    <Content Include="doc\CSharpCode.html" />
+    <Content Include="doc\DataForm.html" />
+    <Content Include="doc\EvalForm.html" />
+    <Content Include="doc\FitForm.html" />
+    <Content Include="doc\FunctionForm.html" />
+    <Content Include="doc\img\about.png" />
+    <Content Include="doc\img\bbeige.jpg" />
+    <Content Include="doc\img\BinaryData.png" />
+    <Content Include="doc\img\CalcMenu.PNG" />
+    <Content Include="doc\img\CompilerErrors.png" />
+    <Content Include="doc\img\CompilerOptions.png" />
+    <Content Include="doc\img\CovarianceForm.png" />
+    <Content Include="doc\img\DataForm.png" />
+    <Content Include="doc\img\del.gif" />
+    <Content Include="doc\img\DevMenu.PNG" />
+    <Content Include="doc\img\EditMenu.png" />
+    <Content Include="doc\img\FileMenu.png" />
+    <Content Include="doc\img\FitForm.png" />
+    <Content Include="doc\img\FunctionForm.png" />
+    <Content Include="doc\img\FunctionLineStyleForm.png" />
+    <Content Include="doc\img\FunctionParForm.png" />
+    <Content Include="doc\img\HelpMenu.PNG" />
+    <Content Include="doc\img\ImportForm.png" />
+    <Content Include="doc\img\LibraryCompileMenu.png" />
+    <Content Include="doc\img\LibraryEditMenu.png" />
+    <Content Include="doc\img\LibraryFileMenu.png" />
+    <Content Include="doc\img\LibraryForm.png" />
+    <Content Include="doc\img\LoadDataForm.png" />
+    <Content Include="doc\img\lupe.gif" />
+    <Content Include="doc\img\lupedisabled.gif" />
+    <Content Include="doc\img\MandelbrotBrighter.jpg" />
+    <Content Include="doc\img\OptionsForm.png" />
+    <Content Include="doc\img\OptionsFormLegend.png" />
+    <Content Include="doc\img\OptionsFormPrinting.png" />
+    <Content Include="doc\img\OptionsFormScale.png" />
+    <Content Include="doc\img\OptionsFormzAxis.png" />
+    <Content Include="doc\img\par.gif" />
+    <Content Include="doc\img\pardisabled.GIF" />
+    <Content Include="doc\img\PlotFileMenu.PNG" />
+    <Content Include="doc\img\PlotHelpMenu.PNG" />
+    <Content Include="doc\img\PlotMenu.PNG" />
+    <Content Include="doc\img\PlotOptionsMenu.PNG" />
+    <Content Include="doc\img\PrintDialog.png" />
+    <Content Include="doc\img\PrintPreview.png" />
+    <Content Include="doc\img\register.png" />
+    <Content Include="doc\img\updown.gif" />
+    <Content Include="doc\img\ViewRangeForm.png" />
+    <Content Include="doc\img\WAVData.png" />
+    <Content Include="doc\PAD\johnshope.fplot.pad.xml" />
+    <Content Include="doc\readme.html" />
+    <Content Include="doc\LibraryForm.html" />
+    <Content Include="doc\LoadDataForm.html" />
+    <Content Include="doc\MainFrame.html" />
+    <Content Include="doc\MainMenu.html" />
+    <Content Include="doc\MouseCommands.html" />
+    <Content Include="doc\normal.css" />
+    <Content Include="doc\OptionsForm.html" />
+    <Content Include="doc\Overview.html" />
+    <Content Include="doc\ParForm.html" />
+    <Content Include="doc\PlotMenu.html" />
+    <Content Include="doc\PredefinedFunctions.html" />
+    <Content Include="doc\PrintDialogs.html" />
+    <Content Include="doc\ViewRangeForm.html" />
+    <Content Include="img\bbeige.jpg" />
+    <None Include="img\bbeige1.jpg" />
+    <Content Include="img\del.gif" />
+    <None Include="img\down.gif" />
+    <None Include="img\error.png" />
+    <None Include="img\delete.gif" />
+    <None Include="img\Glass.png" />
+    <None Include="img\GlassDisabled.png" />
+    <Content Include="img\IExplorer.ico" />
+    <Content Include="img\JohnsHopeLogo.png" />
+    <None Include="img\JohnsHopeLogo1.png" />
+    <Content Include="img\lupe.gif" />
+    <None Include="img\lupedisabled.gif" />
+    <Content Include="img\Mandelbrot Low.ico" />
+    <Content Include="img\Mandelbrot.ico" />
+    <Content Include="img\MandelbrotBright.old.jpg" />
+    <Content Include="img\par.gif" />
+    <None Include="img\Par.png" />
+    <Content Include="img\pardisabled.GIF" />
+    <None Include="img\ParDisabled.png" />
+    <Content Include="img\PayPalDonate.png" />
+    <None Include="img\undo.gif" />
+    <None Include="img\redo.gif" />
+    <None Include="img\SmallZip.ico" />
+    <Content Include="img\updown.gif" />
+    <None Include="img\UpDown.png" />
+    <Content Include="img\VisualStudio.ico" />
+    <None Include="img\warning.png" />
+    <Content Include="Mandelbrot.ico" />
+    <None Include="Resources\delete.png" />
+    <EmbeddedResource Include="Controls\ImportsGrid.resx">
+      <DependentUpon>ImportsGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Mandelbrot.ico" />
+    <EmbeddedResource Include="Forms\DataLineStyleForm.resx">
+      <DependentUpon>DataLineStyleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Controls\CodeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemsGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Copyright.Designer.cs" />
+    <None Include="Copyright1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Copyright.resx</DependentUpon>
+    </None>
+    <Compile Include="Forms\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\CompilerErrors.cs" />
+    <Compile Include="Controls\DataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConsoleForm.Designer.cs">
+      <DependentUpon>ConsoleForm.cs</DependentUpon>
+    </Compile>
+    <None Include="Controls\DragAndDropGridExample.cs" />
+    <Compile Include="Controls\ImportsGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Controls\ItemsGrid.cs">
+      <SubType>Component</SubType>
+    </None>
+    <Compile Include="Forms\DataLineStyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataLineStyleForm.Designer.cs">
+      <DependentUpon>DataLineStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Excel.cs" />
+    <Compile Include="Forms\FormStack.cs" />
+    <None Include="Controls\ImportsGridView.cs">
+      <SubType>Component</SubType>
+    </None>
+    <Compile Include="Forms\EvalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EvalForm.Designer.cs">
+      <DependentUpon>EvalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExceptionForm.Designer.cs">
+      <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Start.cs" />
+    <Compile Include="Code\resfinder.cs" />
+    <Compile Include="Controls\StackTrace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="todo.cs" />
+    <Compile Include="Code\SpecialCursors.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="doc\img\TextDataForm.png" />
+    <None Include="doc\Johns Hope%27s FPlot.chm" />
+    <None Include="doc\Johns Hope%27s FPlot.hhp" />
+    <None Include="doc\makebuild.bat" />
+    <None Include="doc\Index.hhk" />
+    <None Include="doc\make.bat" />
+    <None Include="doc\Table of Contents.hhc" />
+    <Content Include="doc\img\cancel_black.png" />
+    <Content Include="doc\img\ConsoleForm.png" />
+    <Content Include="doc\img\DataLineStyle.png" />
+    <Content Include="doc\img\delete.gif" />
+    <Content Include="doc\img\downloadButton.png" />
+    <Content Include="doc\img\EvalFrame.png" />
+    <Content Include="doc\img\ExcelDataFrom.png" />
+    <Content Include="doc\img\gammq.png" />
+    <Content Include="doc\img\gammq.Transparent.png" />
+    <Content Include="doc\img\Glass.png" />
+    <Content Include="doc\img\GradientChooserForm.png" />
+    <Content Include="doc\img\Icon.Pause.png" />
+    <Content Include="doc\img\Icons.1D.png" />
+    <Content Include="doc\img\Icons.2D.png" />
+    <Content Include="doc\img\Icons.Chisquare.png" />
+    <Content Include="doc\img\Icons.cmd.png" />
+    <Content Include="doc\img\Icons.Color2D.png" />
+    <Content Include="doc\img\Icons.Compile.png" />
+    <Content Include="doc\img\Icons.curve.png" />
+    <Content Include="doc\img\Icons.Data.png" />
+    <Content Include="doc\img\Icons.Eval.png" />
+    <Content Include="doc\img\Icons.Fit.png" />
+    <Content Include="doc\img\Icons.Function.png" />
+    <Content Include="doc\img\Icons.GradientToolIcon.png" />
+    <Content Include="doc\img\Icons.ImageFromDiskIcon.png" />
+    <Content Include="doc\img\Icons.JohnsHope.png" />
+    <Content Include="doc\img\Icons.LinearClampedGradientIcon.png" />
+    <Content Include="doc\img\Icons.LineStyle.png" />
+    <Content Include="doc\img\Icons.MenuEditCopyIcon.png" />
+    <Content Include="doc\img\Icons.MenuEditCutIcon.png" />
+    <Content Include="doc\img\Icons.MenuEditEraseSelectionIcon.png" />
+    <Content Include="doc\img\Icons.MenuEditPasteIcon.png" />
+    <Content Include="doc\img\Icons.MenuEditRedoIcon.png" />
+    <Content Include="doc\img\Icons.MenuEditUndoIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileAcquireFromClipboardIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileCloseIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileNewIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileOpenIcon.png" />
+    <Content Include="doc\img\Icons.MenuFilePrintIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileSaveAsIcon.png" />
+    <Content Include="doc\img\Icons.MenuFileSaveIcon.png" />
+    <Content Include="doc\img\Icons.MenuHelpHelpTopicsIcon.png" />
+    <Content Include="doc\img\Icons.MenuHelpTutorialsIcon.png" />
+    <Content Include="doc\img\Icons.MenuImageRotate180Icon.png" />
+    <Content Include="doc\img\Icons.MenuLayersLayerPropertiesIcon.png" />
+    <Content Include="doc\img\Icons.MenuViewActualSizeIcon.png" />
+    <Content Include="doc\img\Icons.MenuViewGridIcon.png" />
+    <Content Include="doc\img\Icons.MenuViewRulersIcon.png" />
+    <Content Include="doc\img\Icons.Moderate.Progress.png" />
+    <Content Include="doc\img\Icons.NewCurve.png" />
+    <Content Include="doc\img\Icons.NewData.png" />
+    <Content Include="doc\img\Icons.NewLibrary.png" />
+    <Content Include="doc\img\Icons.NewPlot.png" />
+    <Content Include="doc\img\Icons.NOfF.png" />
+    <Content Include="doc\img\Icons.Plot.png" />
+    <Content Include="doc\img\Icons.PlusMinus.png" />
+    <Content Include="doc\img\Icons.Progress.png" />
+    <Content Include="doc\img\Icons.Q.png" />
+    <Content Include="doc\img\Icons.Run.png" />
+    <Content Include="doc\img\Icons.Slow.Progress.png" />
+    <Content Include="doc\img\Icons.Trash.png" />
+    <Content Include="doc\img\Icons.UpdatePlot.png" />
+    <Content Include="doc\img\Images.ImageStrip.CloseButton.Hot.png" />
+    <Content Include="doc\img\MainFrame.png" />
+    <Content Include="doc\img\MandelbrotBright.jpg" />
+    <Content Include="doc\img\ok.png" />
+    <Content Include="doc\img\Par.png" />
+    <Content Include="doc\img\PlotForm.png" />
+    <Content Include="doc\img\UpdateFrom.png" />
+    <Content Include="doc\screenshot.jpg" />
+    <Content Include="doc\screenshot.png" />
+    <Content Include="doc\Screenshots\Mandelbrot.png" />
+    <Content Include="doc\Screenshots\screenshot.png" />
+    <Content Include="img\Download Button.png" />
+    <Content Include="img\downloadButton.png" />
+    <Content Include="img\Icon.Command.ico" />
+    <Content Include="img\Icon.Data.ico" />
+    <Content Include="img\Icon.Data.png" />
+    <Content Include="img\Icon.Fit.ico" />
+    <Content Include="img\Icon.Function.ico" />
+    <Content Include="img\Icon.Library.ico" />
+    <Content Include="img\Icon.Pause.png" />
+    <Content Include="img\Icon.Plot.ico" />
+    <Content Include="img\Icon.Plot.png" />
+    <Content Include="img\Icons.1D.png" />
+    <Content Include="img\Icons.2D.png" />
+    <Content Include="img\Icons.Chisquare.png" />
+    <Content Include="img\Icons.Color2D.png" />
+    <Content Include="img\Icons.Compile.png" />
+    <Content Include="img\Icons.Data.png" />
+    <Content Include="img\Icons.Eval.png" />
+    <Content Include="img\Icons.Fit.png" />
+    <Content Include="img\Icons.Function.png" />
+    <Content Include="img\Icons.Moderate.Progress.png" />
+    <Content Include="img\Icons.NewCurve.png" />
+    <Content Include="img\Icons.NewData.png" />
+    <Content Include="img\Icons.NewPlot.png" />
+    <None Include="img\Download Button.design" />
+    <None Include="img\Icons.UpdatePlot.png" />
+    <None Include="img\Update Button.design" />
+    <None Include="Scripts\Make.FPlot.Help.bat" />
+    <Content Include="gradients\Abstract_1.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Abstract_2.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Abstract_3.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Aneurism.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Blinds.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Brushed_Aluminium.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Burning_Paper.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Burning_Transparency.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\Caribbean_Blues.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gradients\CD.ggr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\Icons.cmd.png" />
+    <Content Include="img\Icons.GradientToolIcon.png" />
+    <Content Include="img\Icons.JohnsHope.png" />
+    <Content Include="img\Icons.LinearClampedGradientIcon.png" />
+    <Content Include="img\Icons.LineStyle.png" />
+    <Content Include="img\Icons.MenuImageRotate180Icon.png" />
+    <Content Include="img\Icons.MenuViewRulersIcon.png" />
+    <Content Include="img\Icons.MenuViewZoomToSelectionIcon.png" />
+    <Content Include="img\Icons.MenuViewZoomToWindowIcon.png" />
+    <Content Include="img\Icons.NewLibrary.png" />
+    <Content Include="img\Icons.NOfF.png" />
+    <Content Include="img\Icons.PencilSketchEffectIcon.png" />
+    <Content Include="img\Icons.PencilToolIcon.png" />
+    <Content Include="img\Icons.Plot.png" />
+    <Content Include="img\Icons.PlusMinus.png" />
+    <Content Include="img\Icons.Progress.png" />
+    <Content Include="img\Icons.Q.png" />
+    <Content Include="img\Icons.Run.png" />
+    <Content Include="img\Icons.Slow.Progress.png" />
+    <Content Include="img\Icons.Trash.png" />
+    <Content Include="img\JohnsHopeLogo.bmp" />
+    <Content Include="img\JohnsHopeSetupLogo.bmp" />
+    <Content Include="img\Mandelbrot Brown.ico" />
+    <Content Include="img\Mandelbrot Green.ico" />
+    <Content Include="img\Mandelbrot.Blue.ico" />
+    <Content Include="img\Mandelbrot.Olive.ico" />
+    <Content Include="img\Mandelbrot.Orange.ico" />
+    <Content Include="img\Mandelbrot.Red.ico" />
+    <Content Include="img\Mandelbrot.Violett.ico" />
+    <Content Include="img\MandelbrotBright.jpg" />
+    <Content Include="img\ok.png" />
+    <Content Include="readme.txt" />
+    <None Include="img\Cursors.ZoomOutToolCursor.cur" />
+    <None Include="img\Cursors.ZoomInToolCursor.cur" />
+    <None Include="img\Icons.MenuFileSaveAsIcon.png" />
+    <None Include="img\Icons.MenuFilePrintIcon.png" />
+    <None Include="img\Icons.MenuFileOpenIcon.png" />
+    <None Include="img\Icons.MenuFileNewIcon.png" />
+    <None Include="img\Icons.MenuFileCloseIcon.png" />
+    <None Include="img\Icons.MenuFileAcquireFromClipboardIcon.png" />
+    <None Include="img\Icons.MenuEditUndoIcon.png" />
+    <None Include="img\Icons.MenuEditRedoIcon.png" />
+    <None Include="img\Icons.MenuEditPasteIcon.png" />
+    <None Include="img\Icons.MenuEditEraseSelectionIcon.png" />
+    <None Include="img\Images.PayPalDonate.gif" />
+    <None Include="img\Images.ImageStrip.CloseButton.Pressed.png" />
+    <None Include="img\Images.ImageStrip.CloseButton.Normal.png" />
+    <None Include="img\Images.ImageStrip.CloseButton.Hot.png" />
+    <None Include="img\Images.ImageStrip.CloseButton.Disabled.png" />
+    <None Include="img\Icons.ZoomToolIcon.png" />
+    <None Include="img\Icons.ToolConfigStrip.FloodMode.Global.png" />
+    <None Include="img\Icons.PanToolIcon.png" />
+    <None Include="img\Icons.MenuWindowHistoryIcon.png" />
+    <None Include="img\Icons.MenuWindowColorsIcon.png" />
+    <None Include="img\Icons.MenuViewZoomOutIcon.png" />
+    <None Include="img\Icons.MenuViewZoomInIcon.png" />
+    <None Include="img\Icons.MenuViewGridIcon.png" />
+    <None Include="img\Icons.MenuViewActualSizeIcon.png" />
+    <None Include="img\Icons.MenuLayersLayerPropertiesIcon.png" />
+    <None Include="img\Icons.MenuHelpTutorialsIcon.png" />
+    <None Include="img\Icons.MenuHelpSendFeedbackIcon.png" />
+    <None Include="img\Icons.MenuHelpLanguageIcon.png" />
+    <None Include="img\Icons.MenuHelpHelpTopicsIcon.png" />
+    <None Include="img\Icons.MenuHelpDonateIcon.png" />
+    <None Include="img\Icons.MenuHelpCheckForUpdatesIcon.png" />
+    <None Include="img\Icons.MenuFileSaveIcon.png" />
+    <None Include="img\Icons.MenuEditCutIcon.png" />
+    <None Include="img\Icons.MenuEditCopyIcon.png" />
+    <None Include="img\Icons.InkSketchEffectIcon.png" />
+    <None Include="img\Icons.ImageFromDiskIcon.png" />
+    <None Include="img\Icons.curve.png" />
+    <None Include="img\Icons.ColorPickerToolIcon.png" />
+    <None Include="img\Help.ico" />
+    <None Include="img\CurvesEffect.png" />
+    <None Include="Copyright.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Copyright1.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Forms\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Pan.cur" />
+    <None Include="img\cancel_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=2.1.0.2429, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceGrid2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=ad929b4064585aea">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SourceGrid2.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceLibrary, Version=1.2.3.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SourceLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JohnsHope.FPlot.Excel\JohnsHope.FPlot.Excel.csproj">
+      <Project>{D238534D-B8FD-4E2A-8532-F54C76421642}</Project>
+      <Name>JohnsHope.FPlot.Excel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JohnsHope.FPlot.Library\JohnsHope.FPlot.Library.csproj">
+      <Project>{BD66017E-09AD-4380-BE2F-F88D1B472F27}</Project>
+      <Name>JohnsHope.FPlot.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JohnsHope.Update\JohnsHope.Update.csproj">
+      <Project>{D498BD0A-B1C6-4F1B-A132-EE15810BDB29}</Project>
+      <Name>JohnsHope.Update</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>pushd $(ProjectDir)
+:: copy the GIMP gradients to the bin\gradients directory
+if not exist bin\gradients (
+  mkdir bin\gradients
+  copy gradients\*.* bin\gradients
+)
+
+:: copy the help files to the bin\help directory
+if not exist bin\help (
+  mkdir bin\help
+  copy "doc\Johns Hope's FPlot.chm" bin\help
+  copy ..\JohnsHope.FPlot.Library\doc\chm\JohnsHope.FPlot.Library.chm bin\help
+)
+
+popd</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="bin\gradients\" />
+  </ItemGroup>
+</Project>

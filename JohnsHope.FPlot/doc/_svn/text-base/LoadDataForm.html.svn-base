@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta name="keywords" content="Load data from file, load data" />
+		<title>Load data from a file</title>
+		<link rel="stylesheet" type="text/css" href="normal.css" />
+	</head>
+	<body>
+		<h1>Load data from a file</h1>
+		<img src="img/LoadDataForm.png" align="left" hspace="20" vspace="10" alt="Load Data Window" />
+		<p>
+			In this window you can load measurement data from a file. In order to load the data, you need to specify C# code, that will load the
+			data into the corresponding data-array. In order that you don't have to reinvent the wheel every time you want to load a data file,
+			FPlot presets the source for ASCII, binary, WAV (PCM) and Excel files for you. (Excel 2007 files are not yet supported). You can choose between these types of data at the top of this
+			dialogbox. For ASCII data, you must specify a delimtier string, that denotes a set of characters that separate numbers in the ASCII text.
+			In this string there are special characters according to the C# syntax. The most important special characters are \t for a TAB character,
+			\n for a newline and \r for a carriage return character. Also you can specify if the numbers are in a localized format, i.e. 3,141
+			instead of 3.141.<br/>
+			For binary data you must specify a datatype and a byte ordering.<br/>
+			For WAV data you must specify either an audio channel or all channels.<br/>
+			For Excel data you must specify a sheet number, the start and end rows and the columns that contain the data.<br/>
+			If you want to modify the source by your own there are four predefined functions,
+			<code>ASCIIData</code>, <code>BinaryData</code>, <code>WAVData</code> and <code>ExcelData</code>, that load a sequence of numbers into an 
+				<code>List&lt;double&gt;</code>. From within
+			this source code you can refer to the arrays <code>x</code>, <code>y</code>, <code>dx</code> and <code>dy</code>. You can also refer to 
+			the variable <code>Length</code>. Note that you do not have to initialize the arrays, their length is automatically adjusted upon access.
+		</p> 
+		<h3>Toolbar</h3>
+		<p>
+			The <img src="img/Icons.MenuFileOpenIcon.png" style="vertical-align:middle;" alt="Open File"/> button reads a data file.<br />
+			The <img src="img/ok.png" style="vertical-align:middle;" alt="Ok" /> button applies the changes and closes the window.<br />
+			The <img src="img/Images.ImageStrip.CloseButton.Hot.png" style="vertical-align:middle;" alt="Cancel" /> discards any changes and closes the window.<br />
+			The <img src="img/Icons.Compile.png" style="vertical-align:middle;" alt="Compile" /> <b>Compile</b> button, checks the source text for
+			compilation errors and warnings. Compilation errors are shown at the bottom of the window.<br />
+			Next, there are the undo and redo buttons, <img src="img/Icons.MenuEditUndoIcon.png" style="vertical-align:middle;" alt="Undo" /> and
+			<img src="img/Icons.MenuEditRedoIcon.png" style="vertical-align:middle;" alt="Redo" />, with wich you can undo and redo changes in the text editor.<br />
+			Next, there are the two help buttons, <img src="img/Icons.MenuHelpHelpTopicsIcon.png" style="vertical-align:middle;" alt="Help" /> which shows this text, and
+			<img src="img/Icons.MenuHelpTutorialsIcon.png" style="vertical-align:middle;" alt="Library Help" /> which shows help about the
+			<code>JohnsHope.FPlot.Library</code> namespace.<br />
+			Finally, the number of data points loaded is displayed.
+		</p>
+
+	</body>
+</html>

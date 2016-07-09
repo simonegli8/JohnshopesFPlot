@@ -1,0 +1,17 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=JohnsHope.FPlot.Library.chm
+Contents file=JohnsHope.FPlot.Library.hhc
+Index file=JohnsHope.FPlot.Library.hhk
+Default Topic=html\bd6ed41c-7264-8502-0579-2db8e36d580d.htm
+Full-text search=Yes
+Language=0x409 English (United States)
+Title=JohnsHope.FPlot.Library
+[FILES]
+icons\*.gif
+art\*.gif
+media\*.gif
+scripts\*.js
+styles\*.css
+html\*.htm
+[INFOTYPES]

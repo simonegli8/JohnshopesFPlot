@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD66017E-09AD-4380-BE2F-F88D1B472F27}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Mandelbrot.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>JohnsHope.FPlot.Library</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JohnsHope.FPlot.Library</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>false</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin/JohnsHope.FPlot.Library.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Analysis.cs" />
+    <Compile Include="Analysis\AnalysisDefaultClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataReaders\Binary.cs" />
+    <Compile Include="Graphics\BitmapBuilder.cs" />
+    <Compile Include="Items\ItemsList.cs" />
+    <Compile Include="Items\Command.cs" />
+    <None Include="Items\Undo.cs" />
+    <Compile Include="Utils\Compiler.cs" />
+    <Compile Include="Items\CustomFunctions.cs" />
+    <Compile Include="Items\DataColumn.cs" />
+    <Compile Include="Items\DataColumnSerializer.cs" />
+    <Compile Include="Items\DataItem.cs" />
+    <Compile Include="DataReaders\DataReader.cs" />
+    <Compile Include="DataReaders\Excel.cs" />
+    <Compile Include="Analysis\Fit.cs" />
+    <Compile Include="Utils\Parser.cs" />
+    <Compile Include="Items\DataItemSerializer.cs" />
+    <Compile Include="Resources\EmbeddedAssemblies.cs" />
+    <Compile Include="Utils\StringWriter.cs" />
+    <Compile Include="Graphics\GraphicsBase.cs" />
+    <Compile Include="Graphics\Graphics3D.cs" />
+    <Compile Include="Graphics\PlotBehavior.cs" />
+    <Compile Include="Graphics\Plots3D.cs" />
+    <Compile Include="Items\ItemEvents.cs" />
+    <Compile Include="Items\ItemsModel.cs" />
+    <Compile Include="Graphics\Graphics2D.cs" />
+    <Compile Include="Items\Libraries.cs" />
+    <Compile Include="Graphics\LineStyleChooser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\PainterThread.cs" />
+    <Compile Include="Items\Items.cs" />
+    <Compile Include="Items\Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Items\Functions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graphics\Gradients.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\PlotImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graphics\PlotControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\PlotModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graphics\PlotPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Graphics\Painter.cs" />
+    <Compile Include="Graphics\Plot.cs" />
+    <Compile Include="Graphics\Plots2D.cs">
+    </Compile>
+    <Compile Include="Graphics\PlotWebControl.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis\qa.cs" />
+    <Compile Include="Analysis\qk.cs" />
+    <Compile Include="Analysis\qk15.cs" />
+    <Compile Include="Analysis\qk21.cs" />
+    <Compile Include="Analysis\qk31.cs" />
+    <Compile Include="Analysis\qk41.cs" />
+    <Compile Include="Analysis\qk51.cs" />
+    <Compile Include="Analysis\qk61.cs" />
+    <Compile Include="Utils\resfinder.cs" />
+    <Compile Include="Graphics\Scales.cs" />
+    <Compile Include="Graphics\SpecialCursors.cs" />
+    <Compile Include="DataReaders\Text.cs" />
+    <Compile Include="DataReaders\WAV.cs" />
+    <Compile Include="Utils\WeakReference.cs" />
+    <EmbeddedResource Include="Graphics\PlotControl.resx">
+      <DependentUpon>PlotControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphics\PlotPrintDocument.resx">
+      <DependentUpon>PlotPrintDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Graphics\GPL lisence.txt" />
+    <None Include="img\Mandelbrot16x16.bmp" />
+    <None Include="Scripts\Build.Sandcastle.bat" />
+    <None Include="Scripts\Copy.Library.To.Demos.bat" />
+    <None Include="Scripts\Make.FPlot.Library.Help.bat" />
+    <None Include="Scripts\Prepare.Sandcastle.bat" />
+    <EmbeddedResource Include="Resources\Enlarge.cur" />
+    <Content Include="img\Mandelbrot.ico" />
+    <Content Include="Mandelbrot.ico" />
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Resources\Gradient.ico" />
+    <Content Include="Resources\Gradient.png" />
+    <EmbeddedResource Include="Resources\LineStyle.ico" />
+    <Content Include="Resources\LineStyle.png" />
+    <EmbeddedResource Include="Resources\Mandelbrot.ico" />
+    <EmbeddedResource Include="Resources\Printer.ico" />
+    <Content Include="Resources\Printer.png" />
+    <Content Include="Resources\Wave.png" />
+    <EmbeddedResource Include="Resources\Shrink.cur" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Mandelbrot16x16.bmp" />
+    <Compile Include="todo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="doc\Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
