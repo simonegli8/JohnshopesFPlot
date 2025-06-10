@@ -21,6 +21,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_01EFB05118179D11EC0A7B272A417759"
+        "OwnerKey" = "8:_A9976C69247F107207DE57F82A7FDDB8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_01EFB05118179D11EC0A7B272A417759"
+        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_053D6C322E724FEE96365D9EB7316A3D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -51,8 +63,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_24C65CC70642254A1C464D91F284728A"
-        "OwnerKey" = "8:_4FD6BB75074B6C5EB6EDA0E2B565E862"
+        "MsmKey" = "8:_245131B16C90AA8B5B2C98FA9E0FF418"
+        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -75,26 +87,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_40FC7E00D4AE409CA37BAFD17879FE40"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4136CB8558F34738ADB1480C7F8BC8D5"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4344F0688D93ACC8EE4CC7AFC2D3402F"
-        "OwnerKey" = "8:_4FD6BB75074B6C5EB6EDA0E2B565E862"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4344F0688D93ACC8EE4CC7AFC2D3402F"
-        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -105,20 +99,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_47F8C66BE47D2C1D69E044FF4150FEEE"
-        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4A46C40CB4054E5586483C7FDBE4BC9A"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4FD6BB75074B6C5EB6EDA0E2B565E862"
-        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -143,18 +125,6 @@
         {
         "MsmKey" = "8:_61794642743E49CCA0A82202A94A76F9"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_621E4CA058E3A460CCD289E8FBEC1882"
-        "OwnerKey" = "8:_E0C7348A2E5D7CF3A08D7BF3011F84D8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_621E4CA058E3A460CCD289E8FBEC1882"
-        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -201,6 +171,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_7EEC810F870B7E77F52CA0FDBCFA3090"
+        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_832520E2ED944EA8B6183EB750A479CB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -243,7 +219,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A0B631787537E48C5E84BB2D88CF7A46"
+        "MsmKey" = "8:_A86F899E12A22C9FE3016FCB6A52A42C"
+        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A9976C69247F107207DE57F82A7FDDB8"
         "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -303,6 +285,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D67C1154AF8BBADF3039020A67395F23"
+        "OwnerKey" = "8:_245131B16C90AA8B5B2C98FA9E0FF418"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D67C1154AF8BBADF3039020A67395F23"
+        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D87C3D214B4D4504B9615A44630305F0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -323,12 +317,6 @@
         {
         "MsmKey" = "8:_DFCDE1EA84C64B77AE91978B7ED4894F"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_E0C7348A2E5D7CF3A08D7BF3011F84D8"
-        "OwnerKey" = "8:_C5EEEB432B9E41E09CF70BD85343B7C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -357,8 +345,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_FD13722971973C900288AFC317BD2778"
+        "OwnerKey" = "8:_245131B16C90AA8B5B2C98FA9E0FF418"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_78A072F7F4314E94BA63A12A74EF95B2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_661FDFB9DFE8441DBE3384514121EF77"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -370,49 +370,43 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E0C7348A2E5D7CF3A08D7BF3011F84D8"
+        "OwnerKey" = "8:_A9976C69247F107207DE57F82A7FDDB8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_621E4CA058E3A460CCD289E8FBEC1882"
+        "OwnerKey" = "8:_01EFB05118179D11EC0A7B272A417759"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A0B631787537E48C5E84BB2D88CF7A46"
+        "OwnerKey" = "8:_A86F899E12A22C9FE3016FCB6A52A42C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4FD6BB75074B6C5EB6EDA0E2B565E862"
+        "OwnerKey" = "8:_245131B16C90AA8B5B2C98FA9E0FF418"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_24C65CC70642254A1C464D91F284728A"
+        "OwnerKey" = "8:_FD13722971973C900288AFC317BD2778"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4344F0688D93ACC8EE4CC7AFC2D3402F"
+        "OwnerKey" = "8:_D67C1154AF8BBADF3039020A67395F23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_47F8C66BE47D2C1D69E044FF4150FEEE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_661FDFB9DFE8441DBE3384514121EF77"
+        "OwnerKey" = "8:_7EEC810F870B7E77F52CA0FDBCFA3090"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -502,7 +496,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:2.0.50727   "
+                "FrameworkVersion" = "8:2.0.50727    "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=9832"
                 }
@@ -528,6 +522,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_01EFB05118179D11EC0A7B272A417759"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SourceLibrary, Version=1.2.3.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87"
+                "ScatterAssemblies"
+                {
+                    "_01EFB05118179D11EC0A7B272A417759"
+                    {
+                    "Name" = "8:SourceLibrary.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SourceLibrary.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_053D6C322E724FEE96365D9EB7316A3D"
@@ -630,20 +655,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_24C65CC70642254A1C464D91F284728A"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_245131B16C90AA8B5B2C98FA9E0FF418"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NativeExcel, Version=1.1.9.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Excel, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_24C65CC70642254A1C464D91F284728A"
+                    "_245131B16C90AA8B5B2C98FA9E0FF418"
                     {
-                    "Name" = "8:NativeExcel.DLL"
+                    "Name" = "8:JohnsHope.FPlot.Excel.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:NativeExcel.DLL"
+            "SourcePath" = "8:JohnsHope.FPlot.Excel.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
@@ -721,26 +746,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_40FC7E00D4AE409CA37BAFD17879FE40"
-            {
-            "SourcePath" = "8:..\\WinForms Demo\\WinFormsDemo.csproj.user"
-            "TargetName" = "8:WinFormsDemo.csproj.user"
-            "Tag" = "8:"
-            "Folder" = "8:_2403EE2CDC384997BC9AE8A9BCFD2B75"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4136CB8558F34738ADB1480C7F8BC8D5"
             {
             "SourcePath" = "8:..\\JohnsHope.FPlot\\bin\\gradients\\Blinds.ggr"
@@ -759,37 +764,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4344F0688D93ACC8EE4CC7AFC2D3402F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_4344F0688D93ACC8EE4CC7AFC2D3402F"
-                    {
-                    "Name" = "8:JohnsHope.FPlot.Library.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:JohnsHope.FPlot.Library.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44B9EF238AFE4DE5848AFCCE7884172F"
@@ -812,37 +786,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_47F8C66BE47D2C1D69E044FF4150FEEE"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ICSharpCode.TextEditor, Version=2.1.0.2429, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_47F8C66BE47D2C1D69E044FF4150FEEE"
-                    {
-                    "Name" = "8:ICSharpCode.TextEditor.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ICSharpCode.TextEditor.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4A46C40CB4054E5586483C7FDBE4BC9A"
             {
             "SourcePath" = "8:..\\FPlot Examples\\Fractals.fplot"
@@ -861,37 +804,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4FD6BB75074B6C5EB6EDA0E2B565E862"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Excel, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_4FD6BB75074B6C5EB6EDA0E2B565E862"
-                    {
-                    "Name" = "8:JohnsHope.FPlot.Excel.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:JohnsHope.FPlot.Excel.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5508FFD41B374F5BA5C0F1629C90BB2D"
@@ -974,37 +886,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_621E4CA058E3A460CCD289E8FBEC1882"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SourceLibrary, Version=1.2.3.0, Culture=neutral, PublicKeyToken=96907d46c0a9af87"
-                "ScatterAssemblies"
-                {
-                    "_621E4CA058E3A460CCD289E8FBEC1882"
-                    {
-                    "Name" = "8:SourceLibrary.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SourceLibrary.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_644B171C847C484CA028B261E3B94E31"
             {
             "SourcePath" = "8:..\\JohnsHope.FPlot\\img\\Help.ico"
@@ -1029,7 +910,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.13.3011.41968, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_661FDFB9DFE8441DBE3384514121EF77"
@@ -1140,7 +1021,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.13.3011.41968, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
                     "_78A072F7F4314E94BA63A12A74EF95B2"
@@ -1165,6 +1046,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7EEC810F870B7E77F52CA0FDBCFA3090"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ICSharpCode.TextEditor, Version=2.1.0.2429, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_7EEC810F870B7E77F52CA0FDBCFA3090"
+                    {
+                    "Name" = "8:ICSharpCode.TextEditor.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ICSharpCode.TextEditor.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_832520E2ED944EA8B6183EB750A479CB"
@@ -1307,20 +1219,51 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A0B631787537E48C5E84BB2D88CF7A46"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A86F899E12A22C9FE3016FCB6A52A42C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:JohnsHope.Update, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A0B631787537E48C5E84BB2D88CF7A46"
+                    "_A86F899E12A22C9FE3016FCB6A52A42C"
                     {
-                    "Name" = "8:JohnsHope.Update.EXE"
+                    "Name" = "8:JohnsHope.Update.exe"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:JohnsHope.Update.EXE"
+            "SourcePath" = "8:JohnsHope.Update.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A9976C69247F107207DE57F82A7FDDB8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SourceGrid2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=ad929b4064585aea"
+                "ScatterAssemblies"
+                {
+                    "_A9976C69247F107207DE57F82A7FDDB8"
+                    {
+                    "Name" = "8:SourceGrid2.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SourceGrid2.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
@@ -1529,6 +1472,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D67C1154AF8BBADF3039020A67395F23"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:JohnsHope.FPlot.Library, Version=2.20.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D67C1154AF8BBADF3039020A67395F23"
+                    {
+                    "Name" = "8:JohnsHope.FPlot.Library.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:JohnsHope.FPlot.Library.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D87C3D214B4D4504B9615A44630305F0"
             {
             "SourcePath" = "8:..\\JohnsHope.FPlot\\bin\\gradients\\Burning_Transparency.ggr"
@@ -1609,37 +1583,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E0C7348A2E5D7CF3A08D7BF3011F84D8"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SourceGrid2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=ad929b4064585aea"
-                "ScatterAssemblies"
-                {
-                    "_E0C7348A2E5D7CF3A08D7BF3011F84D8"
-                    {
-                    "Name" = "8:SourceGrid2.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SourceGrid2.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E5ABBD0F1390417AAE0319FA49F430BA"
             {
             "SourcePath" = "8:..\\JohnsHope.FPlot\\bin\\gradients\\Aneurism.ggr"
@@ -1718,6 +1661,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FD13722971973C900288AFC317BD2778"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NativeExcel, Version=1.1.9.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FD13722971973C900288AFC317BD2778"
+                    {
+                    "Name" = "8:NativeExcel.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NativeExcel.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ADCB25D10C6C442B80DE2EE317B0061A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -1952,9 +1926,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Johns Hope's FPlot 2.20"
+        "ProductName" = "8:Johns Hope's FPlot 2.21"
         "ProductCode" = "8:{AEEFE5D6-F22B-4C42-B767-9022AF96F613}"
-        "PackageCode" = "8:{33C6491E-A6F0-4918-B82D-F285AC3C541B}"
+        "PackageCode" = "8:{5B524D7A-C8A9-407D-A023-EDF17BE68166}"
         "UpgradeCode" = "8:{3074BAA5-6FD3-434B-82FF-3A332A8D59D2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
